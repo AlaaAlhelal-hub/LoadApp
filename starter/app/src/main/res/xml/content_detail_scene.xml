@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="2000"
+        app:autoTransition="animateToEnd"/>
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/filename_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:layout_marginStart="@dimen/miduem_margin"
+            android:layout_marginTop="@dimen/miduem_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint android:id="@+id/filename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:layout_marginStart="@dimen/miduem_margin"
+            android:layout_marginEnd="@dimen/miduem_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/filename_label"
+            app:layout_constraintTop_toTopOf="@id/filename_label"/>
+
+        <Constraint android:id="@+id/status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:layout_marginStart="@dimen/miduem_margin"
+            android:layout_marginTop="@dimen/miduem_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filename"/>
+
+        <Constraint android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/miduem_margin"
+            android:layout_marginEnd="@dimen/miduem_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/status_label"
+            app:layout_constraintTop_toBottomOf="@id/filename"/>
+
+        <Constraint android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:layout_margin="@dimen/miduem_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/filename_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            android:layout_marginStart="@dimen/miduem_margin"
+            android:layout_marginTop="@dimen/miduem_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint android:id="@+id/filename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            android:layout_marginStart="@dimen/miduem_margin"
+            android:layout_marginEnd="@dimen/miduem_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/filename_label"
+            app:layout_constraintTop_toTopOf="@id/filename_label"/>
+
+        <Constraint android:id="@+id/status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            android:layout_marginStart="@dimen/miduem_margin"
+            android:layout_marginTop="@dimen/miduem_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filename"/>
+
+        <Constraint android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/miduem_margin"
+            android:layout_marginEnd="@dimen/miduem_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/status_label"
+            app:layout_constraintTop_toBottomOf="@id/filename"/>
+
+        <Constraint android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            android:layout_margin="@dimen/miduem_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </ConstraintSet>
+
+
+</MotionScene>

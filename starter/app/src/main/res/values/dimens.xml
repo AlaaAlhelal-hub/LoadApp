@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_text_size">20sp</dimen>
+    <dimen name="btn_size">20sp</dimen>
+
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="miduem_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+
+    <dimen name="animation_duration">2000</dimen>
+</resources>
