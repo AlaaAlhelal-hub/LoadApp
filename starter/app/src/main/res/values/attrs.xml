@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="LoadingButton">
-<!--   TODO: create custom attributes for the view-->
-    </declare-styleable>
+
+        <attr name="android:textSize" format="reference"/>
+        <attr name="android:text" format="reference"/>
+        <attr name="android:textColor" format="reference"/>
+
+        <attr name="loadingBarColor" format="color"/>
+        <attr name="backgroundCustomColor" format="color"/>
+        <attr name="loadingCircleColor" format="color"/>    </declare-styleable>
 </resources>
